@@ -1,1 +1,15 @@
+//question1 
+import random
+n = random.randint(1, 50)
+count = 0
+for i in range(50):
+    count=count+1
+    guess = int(input("print your guess: "))
+    if(guess==n):
+        print("correct!you guessed it in ",count," times")
+        break
+    elif(guess>n):
+        print("your guess is grater")
+    elif(guess<n):
+        print("your guess is below") 
 
